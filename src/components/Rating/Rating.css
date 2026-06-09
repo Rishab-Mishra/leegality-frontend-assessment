@@ -1,0 +1,23 @@
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .rating__stars {
+    display: flex;
+    gap: 1px;
+    color: #d6d6d6;
+    font-size: 24px;
+    line-height: 1;
+  }
+  
+  .rating__stars .is-filled {
+    color: #f6b01e;
+  }
+  
+  .rating__value {
+    color: #7d7d7d;
+    font-size: 16px;
+    line-height: 1;
+  }
