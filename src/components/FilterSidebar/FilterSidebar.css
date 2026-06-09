@@ -1,0 +1,184 @@
+.filter-sidebar {
+  width: 280px;
+  min-width: 280px;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+
+  position: sticky;
+  top: 64px;
+
+  height: calc(100vh - 64px);
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  transform: translateX(-100%);
+  box-sizing: border-box;
+
+  transition: transform 0.3s ease;
+}
+
+.filter-sidebar--open {
+  transform: translateX(0);
+}
+
+.filter-sidebar__content {
+  padding: 20px;
+}
+
+.filter-sidebar__close {
+  display: none;
+
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  background: transparent;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  margin-bottom: 16px;
+}
+
+.filter-search {
+  margin-bottom: 24px;
+}
+
+.search-bar {
+  width: 100%;
+  height: 44px;
+
+  border: 1px solid #dcdfe4;
+  border-radius: 8px;
+
+  padding: 0 14px;
+  font-size: 15px;
+
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #4a90e2;
+}
+.filter-section {
+  border-top: 1px solid #ececec;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.filter-section h3 {
+  margin: 0 0 16px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 14px;
+
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.checkbox-item input {
+  width: 18px;
+  height: 18px;
+
+  accent-color: #4a90e2;
+}
+.price-range {
+  display: flex;
+  gap: 10px;
+}
+
+.price-range input {
+  flex: 1;
+
+  height: 42px;
+
+  border: 1px solid #dcdfe4;
+  border-radius: 8px;
+
+  padding: 0 12px;
+  width: 20px;
+  font-size: 15px;
+  outline: none;
+}
+
+.price-range input:focus {
+  border-color: #4a90e2;
+}
+
+.apply-btn {
+  width: 100%;
+  height: 42px;
+
+  margin-top: 14px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #4a90e2;
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+.clear-btn {
+  width: 100%;
+
+  height: 42px;
+
+  margin-top: 24px;
+
+  border: 1px solid #4a90e2;
+  border-radius: 6px;
+
+  background: white;
+  color: #4a90e2;
+
+  cursor: pointer;
+}
+
+.filter-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filter-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-sidebar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+@media (max-width: 900px) {
+  .filter-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    height: 100vh;
+
+    z-index: 1000;
+
+    background: #fff;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .filter-sidebar__close {
+    display: block;
+  }
+}
