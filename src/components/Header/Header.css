@@ -34,11 +34,6 @@
   border-radius: 7px;
 }
 
-.header-icon-button--hidden {
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .header-icon-button span {
   display: block;
   width: 20px;

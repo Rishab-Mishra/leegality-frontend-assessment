@@ -25,8 +25,7 @@ const ProductDetails = () => {
     <div className="product-details-page">
 
       <Header
-        showFilters={false}
-        showSearchBar={false}
+       showActionHeader={false}
       />
 
       <div className="product-details">
